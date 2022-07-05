@@ -2,7 +2,7 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify({ message: "drone is nice" }));
+  res.end(JSON.stringify({ message: "message is changed" }));
 });
 
 const port = process.env.PORT ?? 3000;
