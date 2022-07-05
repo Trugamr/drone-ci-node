@@ -23,19 +23,3 @@ volumes:
   - name: dockersock
     host:
       path: /var/run/docker.sock
-# ---
-# kind: pipeline
-# type: exec
-# name: deploy
-
-# platform:
-#   os: linux
-#   arch: amd64
-
-# steps:
-#   - name: run docker image
-#     commands:
-#       - docker rm -f drone-ci-node 1> /dev/null 2>&1 # stop and remove container without throwing an error
-#       - docker run -d --name drone-ci-node -p 4000:80 drone-ci-node
-# depends_on:
-#   - build

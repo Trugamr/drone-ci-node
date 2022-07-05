@@ -2,7 +2,7 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify({ message: "hello 👋" }));
+  res.end(JSON.stringify({ message: "🐳 docker is awesome" }));
 });
 
 const port = process.env.PORT ?? 3000;
